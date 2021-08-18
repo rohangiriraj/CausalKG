@@ -1,7 +1,7 @@
 # Introduction
 
-This is the official implementation of the paper "A hybrid method for Causal Inference in Knowledge Graphs". We use many existing open source libraries for implementing the method
-proposed in the paper. Please follow the setup instructions to install and get the code running.
+This is the official implementation of the paper ["Causal Discovery in Knowledge Graphs by Exploiting Asymmetric Properties of Non-Gaussian Distributions"](https://arxiv.org/abs/2106.01043). We use many existing open source libraries for implementing the method
+proposed in the paper. Please follow the setup instructions to install the requirements and get the code running.
 
 # Setup and Installation
 
