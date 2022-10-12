@@ -27,14 +27,13 @@ class Hybrid:
             w = np.loadtxt(fname=w_path, delimiter="\t", skiprows=0)
             r = np.loadtxt(fname=r_path, delimiter="\t", skiprows=0)
 
-            # print(r.shape)
-            # print(r[0].shape)
+            
             x = w.shape[0] if w.shape[0] < w.shape[1] else w.shape[1]
 
             w = w.reshape(x, x, x)
 
             m_1 = tl.tenalg.mode_dot(w, e, 1, transpose=False)
-            # print(m_1.shape)
+        
 
             Q_tensor = []
             if self.dataset == "fb15k-237":
@@ -50,11 +49,11 @@ class Hybrid:
                 Q_tensor.append(m_3)
 
             Q_tensor = np.array(Q_tensor)
-            # print(Q_tensor.shape)
+            
             Q_matrix = Q_tensor.reshape(
                 Q_tensor.shape[0], Q_tensor.shape[1] * Q_tensor.shape[2]
             )
-            # print(Q_matrix.shape)
+            
 
             Q_matrices.append(Q_matrix)
         print("The matrix Q has been computed for 5, 7 and 10 dimensions respectively.")
